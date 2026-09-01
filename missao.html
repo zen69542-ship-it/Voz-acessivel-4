@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Missão — AcessaMais</title>
+<meta name="description" content="Por que a inclusão importa na escola, no trabalho e na sociedade.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500;1,9..144,600&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="libras.css">
+<link rel="stylesheet" href="motor.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="brand-icon" viewBox="0 0 24 24">
+      <circle cx="9" cy="12" r="7.5"/>
+      <circle cx="15" cy="12" r="7.5" opacity=".55"/>
+    </symbol>
+    <symbol id="inclusion-icon" viewBox="0 0 100 100">
+      <circle class="ii-ring" cx="50" cy="50" r="42" fill="none" stroke="currentColor" stroke-width="4" pathLength="1"/>
+      <path class="ii-line" d="M21 37 Q50 59 79 37" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" pathLength="1"/>
+      <path class="ii-line" d="M23 38 L63 81" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" pathLength="1"/>
+      <path class="ii-line" d="M77 38 L37 81" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" pathLength="1"/>
+      <path class="ii-line" d="M36 81 Q50 87 64 81" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" pathLength="1"/>
+      <circle class="ii-node" cx="50" cy="17" r="13" fill="var(--paper)" stroke="var(--paper)" stroke-width="7"/>
+      <circle class="ii-node ii-fill" cx="50" cy="17" r="11"/>
+      <circle class="ii-node" cx="21" cy="37" r="9" fill="var(--paper)" stroke="var(--paper)" stroke-width="6"/>
+      <circle class="ii-node ii-fill" cx="21" cy="37" r="7"/>
+      <circle class="ii-node" cx="79" cy="37" r="9" fill="var(--paper)" stroke="var(--paper)" stroke-width="6"/>
+      <circle class="ii-node ii-fill" cx="79" cy="37" r="7"/>
+      <circle class="ii-node" cx="36" cy="81" r="9" fill="var(--paper)" stroke="var(--paper)" stroke-width="6"/>
+      <circle class="ii-node ii-fill" cx="36" cy="81" r="7"/>
+      <circle class="ii-node" cx="64" cy="81" r="9" fill="var(--paper)" stroke="var(--paper)" stroke-width="6"/>
+      <circle class="ii-node ii-fill" cx="64" cy="81" r="7"/>
+    </symbol>
+  </defs>
+</svg>
+<a href="#main" class="skip-link">Pular para o conteúdo</a>
+<div class="intro-loader" id="introLoader">
+  <button class="intro-skip" id="introSkip" type="button">Pular introdução</button>
+  <div class="intro-content" aria-hidden="true">
+    <svg class="intro-inclusion" id="introInclusion" viewBox="0 0 100 100"><use href="#inclusion-icon" xlink:href="#inclusion-icon"></use></svg>
+    <span class="intro-mark" id="introMark"><svg class="spark" viewBox="0 0 24 24"><use href="#brand-icon" xlink:href="#brand-icon"></use></svg><span id="introMarkText">AcessaMais</span></span>
+    <p class="intro-tagline" id="introTagline">Conhecimento para todos, do jeito de cada um.</p>
+  </div>
+</div>
+<div class="scroll-progress" id="scrollProgress"></div>
+<header class="topbar">
+  <div class="wrap bar">
+    <a href="index.html" class="brand"><span class="mk"><svg class="spark" viewBox="0 0 24 24"><use href="#brand-icon" xlink:href="#brand-icon"></use></svg></span>AcessaMais</a>
+    <button class="navtoggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+        <path class="bar bar1" d="M3 7h18" stroke="#14171F" stroke-width="1.8" stroke-linecap="round"/>
+        <path class="bar bar2" d="M3 12h18" stroke="#14171F" stroke-width="1.8" stroke-linecap="round"/>
+        <path class="bar bar3" d="M3 17h18" stroke="#14171F" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <nav class="navlinks" id="navLinks">
+      <a href="index.html">Início</a>
+      <a href="missao.html" aria-current="page">Missão</a>
+      <a href="acessibilidade.html">Acessibilidade</a>
+      <a href="tecnologia.html">Tecnologia</a>
+      <a href="equipe.html">Equipe</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
+</header>
+<div class="cb-banner" id="cbBanner" role="status" aria-live="polite">🎨 <span id="cbBannerText">Modo de cor ativo</span></div>
+<div class="epilepsy-banner" id="epilepsyBanner" role="status" aria-live="polite">⚠️ <span id="epilepsyBannerText">Modo epilepsia ativo</span></div>
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <h1>Por que a inclusão importa</h1>
+      <p>Da sala de aula ao mercado de trabalho: o raciocínio completo de por que este projeto trata a inclusão como o único assunto que importa.</p>
+    </div>
+  </div>
+
+  <section id="social" data-narrate="Por que a inclusão importa, socialmente e digitalmente">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">O ponto de partida</span>
+        <h2>Por que a inclusão é importante — socialmente e digitalmente</h2>
+        <p>Inclusão é o princípio de que espaços, produtos e serviços devem ser construídos para funcionar com a diversidade real das pessoas, não com uma versão média e imaginária delas. Socialmente, isso significa garantir que ninguém precise "se encaixar" para participar da vida em comunidade. Digitalmente, significa que um site, um aplicativo ou uma plataforma de ensino não pode, sem querer, fechar a porta para quem enxerga, ouve, se movimenta ou processa informação de um jeito diferente do considerado "padrão".</p>
+      </div>
+      <div class="split">
+        <div class="txt">
+          <p>A exclusão raramente é proposital — na maioria das vezes, ela é resultado de decisões tomadas sem pensar em quem fica de fora: um contraste de cores baixo demais, um botão pequeno demais, um vídeo sem legenda, um site que só funciona com mouse. Cada uma dessas escolhas parece pequena isoladamente, mas juntas formam barreiras reais.</p>
+          <p>Pensar em inclusão desde o início de um projeto — e não como um remendo depois de pronto — é o que separa uma tecnologia que serve a poucos de uma que serve a todos.</p>
+        </div>
+        <figure class="media">
+          <div class="frame"><img src="img/hands-circle.jpg" width="679" height="452" loading="lazy" decoding="async" alt="Vista de cima de um grupo diverso de pessoas com as mãos unidas em círculo, simbolizando união e trabalho coletivo."></div>
+          <figcaption>União não é sobre ser igual — é sobre caber, cada um do seu jeito.</figcaption>
+        </figure>
+      </div>
+      <div class="stat-row">
+        <div class="stat-box"><h4>~1 bilhão de pessoas</h4><p>Cerca de 15% da população mundial vive com algum tipo de deficiência, segundo a Organização Mundial da Saúde (OMS).</p></div>
+        <div class="stat-box"><h4>14,4 milhões no Brasil</h4><p>7,3% da população brasileira com 2 anos ou mais tem alguma deficiência, de acordo com o Censo Demográfico 2022 (IBGE).</p></div>
+        <div class="stat-box"><h4>7,4% × 19,5%</h4><p>Só 7,4% das pessoas com deficiência no Brasil concluíram o ensino superior, contra 19,5% das pessoas sem deficiência (IBGE, 2022) — a diferença que este projeto tenta reduzir.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="quote-block">
+      <p>Um projeto de inclusão só faz sentido quando ele mesmo não exclui ninguém no caminho — nem no design da interface, nem na forma como a equipe que o constrói se organiza.</p>
+      <span>Princípio central do projeto AcessaMais</span>
+    </div>
+  </div>
+
+  <section id="escola" data-narrate="Por que a inclusão é importante na escola">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">O coração do projeto</span>
+        <h2>Por que a inclusão é importante na escola</h2>
+        <p>A escola é, para a maioria das pessoas, o primeiro espaço público de convivência prolongada com quem é diferente delas — em corpo, em forma de aprender, em cultura, em ritmo. É também onde se formam, cedo, as ideias que uma pessoa vai carregar sobre quem "pertence" e quem não pertence a um espaço. Por isso, uma escola inclusiva não beneficia só o aluno com deficiência: ela forma toda uma geração acostumada a conviver com a diferença como algo normal, não como exceção.</p>
+      </div>
+      <div class="split rev">
+        <figure class="media">
+          <div class="frame"><img src="img/three-girls.jpg" width="1000" height="714" loading="lazy" decoding="async" alt="Três meninas sorrindo e abraçadas, uma delas com síndrome de Down, demonstrando amizade e convivência natural entre crianças com e sem deficiência."></div>
+          <figcaption>Convivência desde cedo constrói empatia — não é ensinada só em teoria.</figcaption>
+        </figure>
+        <div class="txt">
+          <p>Do ponto de vista prático, incluir na escola significa remover barreiras concretas: material didático que também exista em áudio para quem tem dislexia ou baixa visão, avaliações que meçam conhecimento e não a velocidade de escrita de quem tem dificuldade motora, comunicação visual para alunos surdos, ambientes previsíveis para alunos autistas.</p>
+          <p>É exatamente essa lacuna que o AcessaMais tenta preencher: transformar texto escrito em áudio para que a leitura deixe de ser uma barreira e passe a ser um caminho aberto a qualquer estudante, independente de como ele processa a informação.</p>
+        </div>
+      </div>
+      <div class="stat-row">
+        <div class="stat-box"><h4>Para o aluno</h4><p>Ganha autonomia para estudar no seu próprio ritmo, sem depender exclusivamente de outra pessoa para ler ou explicar o conteúdo.</p></div>
+        <div class="stat-box"><h4>Para o professor</h4><p>Ganha uma ferramenta a mais para diversificar como o conteúdo chega até turmas com necessidades diferentes, sem precisar recriar material do zero.</p></div>
+        <div class="stat-box"><h4>Para a turma</h4><p>Aprende, na prática e não na teoria, que acessibilidade não é favor — é parte de como um ambiente bem projetado deveria funcionar desde o início.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="professores" style="background:var(--surface);" data-narrate="O papel dos professores na inclusão">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Quem está na linha de frente</span>
+        <h2>O papel dos professores na inclusão</h2>
+        <p>Nenhuma plataforma substitui o professor — o máximo que a tecnologia faz é tirar obstáculos do caminho dele. Quem identifica que um aluno não está acompanhando por causa de uma barreira de leitura, de atenção ou de comunicação — e não por falta de esforço — é, na maior parte das vezes, o professor em sala.</p>
+      </div>
+      <div class="split">
+        <div class="txt">
+          <p><strong>Adaptar não é facilitar.</strong> Mudar o formato como o conteúdo chega até um aluno — em áudio, com mais tempo, com instruções divididas em passos — não é reduzir a exigência acadêmica. É garantir que a dificuldade que o aluno enfrenta seja a do conteúdo, e não a do formato.</p>
+          <p>Isso exige formação: um professor não nasce sabendo identificar se uma dificuldade vem de dislexia, de baixa visão não diagnosticada, de uma barreira emocional ou de desinteresse. A capacitação continuada da equipe pedagógica — e o apoio da coordenação da escola — são tão parte da inclusão quanto qualquer recurso técnico.</p>
+        </div>
+        <div class="txt">
+          <p><strong>O que costuma ajudar:</strong> comunicação clara sobre o que se espera de cada atividade, mais de uma forma de entregar o mesmo conteúdo (texto, áudio, imagem), e feedback que aponte o que fazer a seguir — não só o que está errado.</p>
+          <p><strong>O que tende a excluir, mesmo sem intenção:</strong> comparar publicamente o ritmo de alunos diferentes, tratar adaptação como "regra especial" em voz alta na frente da turma, ou presumir que todo aluno com uma mesma condição precisa exatamente do mesmo ajuste.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="trabalho" data-narrate="Por que a inclusão importa no trabalho">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Além dos muros da escola</span>
+        <h2>Por que a inclusão importa também no trabalho</h2>
+        <p>A inclusão que se aprende — ou não se aprende — na escola se estende diretamente ao mercado de trabalho. Um estudante que cresce em um ambiente inclusivo tem mais chance de se tornar um profissional que projeta produtos, escreve textos e toma decisões pensando em quem usa aquilo depois. E um estudante com deficiência que teve acesso pleno à educação chega ao mercado de trabalho com as mesmas oportunidades de qualificação que qualquer outro.</p>
+      </div>
+      <div class="split">
+        <div class="txt">
+          <p>Empresas cada vez mais reconhecem que acessibilidade digital não é um nicho: é um requisito de qualidade. Um site que não funciona com leitor de tela perde clientes, candidatos e colaboradores capazes — não porque eles não sabem fazer o trabalho, mas porque a ferramenta não foi construída para eles.</p>
+          <p>Existe uma diferença entre contratar alguém por obrigação legal e de fato criar condições para que essa pessoa produza, cresça e seja promovida como qualquer outro colaborador. A primeira cumpre uma cota; a segunda constrói uma equipe. Barreiras invisíveis — reuniões só presenciais, softwares internos incompatíveis com leitor de tela, processos seletivos com dinâmicas que dependem de agilidade física — bloqueiam a segunda mesmo quando a primeira já foi cumprida.</p>
+        </div>
+        <figure class="media">
+          <div class="frame"><img src="img/group-backs.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="Grupo de nove pessoas visto de costas, abraçadas lado a lado em frente a um quadro-negro, representando união e diversidade em um ambiente coletivo."></div>
+          <figcaption>A mesma lógica de inclusão aprendida na escola se repete no ambiente de trabalho.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="preconceito" style="background:var(--surface);" data-narrate="Preconceito, discriminação e desigualdade">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Nomeando o problema</span>
+        <h2>Preconceito, discriminação e desigualdade não são a mesma coisa</h2>
+        <p>Usar esses termos como sinônimos esconde onde exatamente o problema está — e isso dificulta saber o que precisa mudar.</p>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-card"><h3>Estereótipo</h3><p style="font-size:14px; color:var(--ink-soft);">Uma generalização sobre um grupo — "pessoa com deficiência intelectual não consegue trabalhar". Existe na cabeça, antes de qualquer ação.</p></div>
+        <div class="cat-card"><h3>Preconceito</h3><p style="font-size:14px; color:var(--ink-soft);">O julgamento negativo formado a partir do estereótipo, mesmo sem prova — a crença de que aquilo é verdade para a pessoa à sua frente.</p></div>
+        <div class="cat-card"><h3>Discriminação</h3><p style="font-size:14px; color:var(--ink-soft);">O preconceito colocado em ação: não contratar, não convidar, não adaptar. É o momento em que a crença vira exclusão concreta.</p></div>
+        <div class="cat-card"><h3>Capacitismo</h3><p style="font-size:14px; color:var(--ink-soft);">A forma específica de discriminação contra pessoas com deficiência — presumir incapacidade geral a partir de uma limitação específica.</p></div>
+        <div class="cat-card"><h3>Exclusão</h3><p style="font-size:14px; color:var(--ink-soft);">O resultado acumulado: um ambiente, ao longo do tempo, sistematicamente mais difícil de acessar para determinado grupo.</p></div>
+        <div class="cat-card"><h3>Estigmatização</h3><p style="font-size:14px; color:var(--ink-soft);">Quando a marca da diferença passa a definir a identidade inteira da pessoa aos olhos dos outros, apagando o resto de quem ela é.</p></div>
+      </div>
+      <p style="color:var(--ink-soft); font-size:15px; margin-top:24px; max-width:70ch;">Comportamentos pequenos acumulam: uma piada "inofensiva" sobre um jeito de falar, um convite que não considera se o local tem rampa, uma reunião marcada sem pensar que alguém precisa de intérprete de Libras. Isoladas, cada barreira parece exagero de quem reclama. Somadas ao longo de uma vida inteira, formam exatamente a desigualdade que a inclusão tenta desfazer.</p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="quote-block">
+      <p>Julgar sem ouvir as duas partes não é justiça, mesmo quando o resultado está certo.</p>
+      <span>Sêneca, filósofo estoico — parafraseado</span>
+    </div>
+  </div>
+
+  <section id="equidade" data-narrate="A diferença entre igualdade e equidade">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Um erro comum</span>
+        <h2>Por que tratar todo mundo igual nem sempre é justo</h2>
+        <p>Oferecer exatamente a mesma coisa para todos parece justo — mas só funciona quando todos partem do mesmo ponto. Quando não partem, tratar igual mantém a desigualdade, só que agora com aparência de neutralidade.</p>
+      </div>
+      <div class="compare-grid">
+        <div class="compare-col bad"><span class="lbl2">Igualdade</span><p>Toda avaliação é só em texto escrito, para qualquer aluno, "porque é justo ser igual para todos". Um aluno cego não consegue nem começar a prova.</p></div>
+        <div class="compare-col good"><span class="lbl2">Equidade</span><p>A avaliação mede o mesmo conhecimento, mas o aluno cego recebe o material em áudio ou Braille. O padrão de exigência é igual; o caminho até ele, não precisa ser.</p></div>
+      </div>
+      <p style="color:var(--ink-soft); font-size:15px; margin-top:20px; max-width:70ch;">Essa é a lógica por trás do AcessaMais: o conteúdo continua sendo o mesmo conteúdo. Muda apenas o caminho até ele — de texto para áudio — para que a barreira de acesso deixe de decidir quem consegue aprender e quem não consegue.</p>
+    </div>
+  </section>
+
+  <section id="agora" style="background:var(--surface);" data-narrate="Por que a inclusão está tão em pauta agora">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Um tema do nosso tempo</span>
+        <h2>Por que a inclusão está tão em pauta agora</h2>
+        <p>A inclusão não é um tema novo, mas está mais visível hoje por uma combinação de fatores: legislação mais clara sobre os direitos de pessoas com deficiência, diretrizes técnicas internacionais de acessibilidade digital (como as WCAG) amplamente adotadas, e uma sociedade civil mais atenta a discursos de equidade depois de décadas de exclusão silenciosa. Ao mesmo tempo, a tecnologia tornou tecnicamente simples resolver barreiras que antes pareciam permanentes — leitura em voz alta, legendas automáticas, navegação por voz — o que tira a desculpa de que "não dá para fazer".</p>
+      </div>
+      <div class="split rev">
+        <figure class="media">
+          <div class="frame"><img src="img/accessibility-icon.png" width="900" height="600" loading="lazy" decoding="async" alt="Ilustração de um profissional analisando gráficos de desempenho ao lado de um ícone de acessibilidade universal, um troféu e estrelas, representando o valor estratégico da acessibilidade." style="filter:none; background:#8B2A1E;"></div>
+          <figcaption>Acessibilidade deixou de ser exceção técnica para virar critério de qualidade.</figcaption>
+        </figure>
+        <div class="txt">
+          <p>Combater a desigualdade e o preconceito passa por isso: uma pessoa com deficiência que não consegue estudar, trabalhar ou se informar nas mesmas condições que as demais está sendo excluída de oportunidades — não por falta de capacidade, mas por falta de acesso. Quando a tecnologia resolve esse acesso, ela remove uma das justificativas históricas usadas para manter essa desigualdade.</p>
+          <p>É por isso que este projeto trata a inclusão como o único assunto que importa aqui: não é um recurso a mais em uma lista de funcionalidades, é a razão do projeto existir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="polarizacao" data-narrate="Um tema que ainda divide opiniões pelo mundo">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Uma honestidade necessária</span>
+        <h2>Um consenso ainda incompleto</h2>
+        <p>Seria confortável apresentar a inclusão como uma pauta já resolvida, aceita por todo mundo, faltando só boa vontade para colocar em prática. Não é bem assim — e este projeto prefere não fingir que é.</p>
+      </div>
+      <div class="txt" style="max-width:76ch;">
+        <p>Pesquisas de opinião e a cobertura da imprensa em diferentes países mostram algo consistente: o apoio a pautas de inclusão, equidade e diversidade varia bastante conforme o país, a geração e a posição política de quem responde. É esse o sentido mais comum da palavra "polarização" nesse debate — não a ausência de qualquer acordo, mas a distância real entre o que diferentes grupos consideram razoável, urgente ou até legítimo discutir. Para uma parte da opinião pública, essas pautas representam avanços necessários de dignidade e de direitos historicamente negados. Para outra parte, elas levantam dúvidas sobre o ritmo das mudanças, os métodos escolhidos para promovê-las ou os limites do que deveria virar lei. As duas posições convivem no mesmo momento histórico, em praticamente todos os países onde o assunto é discutido publicamente — e não é papel de um projeto escolar decidir quem está certo nessa disputa mais ampla.</p>
+        <p>O que este projeto assume como ponto de partida é mais estreito, e por isso reúne apoio bem mais amplo, dos dois lados desse debate: uma pessoa surda tem o direito de entender o conteúdo de uma aula; uma pessoa com baixa visão tem o direito de operar um computador; uma pessoa com dificuldade motora tem o direito de navegar em um site sem depender de precisão milimétrica do mouse. Isso é acessibilidade técnica — o meio prático, não o debate político mais amplo em torno dos seus fins. É nesse espaço, deliberadamente mais restrito, que o AcessaMais escolheu atuar.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="quote-block voice">
+      <p>Concordar sobre tudo nunca foi pré-requisito para concordar que uma rampa deveria existir.</p>
+      <span>Reflexão do grupo AcessaMais</span>
+    </div>
+  </div>
+
+  <section id="marco-legal" data-narrate="O que a lei diz sobre acessibilidade digital">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Não é mais opcional</span>
+        <h2>O que a lei diz sobre acessibilidade digital</h2>
+        <p>No Brasil, a Lei Brasileira de Inclusão da Pessoa com Deficiência (Lei nº 13.146/2015, também chamada de Estatuto da Pessoa com Deficiência) estabelece a acessibilidade — inclusive digital — como um direito, não como um diferencial de mercado. Antes da lei, tornar um site acessível era tratado, na prática, como algo opcional. Com a LBI, sites, plataformas e serviços digitais passam a ter responsabilidade legal quanto à acessibilidade.</p>
+      </div>
+      <div class="split">
+        <div class="txt">
+          <p>Essa mudança de status — de diferencial para obrigação — é importante para entender por que a inclusão está tão em pauta agora: não é só uma tendência de discurso, é também uma exigência formal que empresas, escolas e órgãos públicos precisam cumprir.</p>
+          <p>Para este projeto, isso reforça a decisão de tratar acessibilidade como parte da estrutura do site desde o início — HTML semântico, navegação por teclado, contraste adequado — e não como um plugin adicionado depois de pronto.</p>
+        </div>
+        <div class="stat-box" style="border:1px solid var(--line);">
+          <h4>Na prática, isso significa:</h4>
+          <p style="margin-top:10px;">Textos alternativos em imagens, navegação completa por teclado, contraste mínimo garantido, compatibilidade com leitores de tela e conteúdo compreensível — não apenas presentes, mas exigíveis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fontes" style="background:var(--surface);" data-narrate="Fontes e referências sobre inclusão">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Base do projeto</span>
+        <h2>Fontes e referências</h2>
+        <p>O conteúdo desta página não é opinião solta — se apoia em legislação e diretrizes técnicas reconhecidas sobre inclusão e acessibilidade digital.</p>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-card"><h3>OMS</h3><p style="font-size:14px; color:var(--ink-soft);">Relatório Mundial sobre a Deficiência, Organização Mundial da Saúde — base da estimativa de que 15% da população mundial vive com alguma deficiência.</p></div>
+        <div class="cat-card"><h3>IBGE</h3><p style="font-size:14px; color:var(--ink-soft);">Censo Demográfico 2022 — Pessoas com Deficiência, Instituto Brasileiro de Geografia e Estatística — base dos números sobre o Brasil citados nesta página.</p></div>
+        <div class="cat-card"><h3>Lei Brasileira de Inclusão</h3><p style="font-size:14px; color:var(--ink-soft);">Lei nº 13.146/2015 (Estatuto da Pessoa com Deficiência), Presidência da República — estabelece a acessibilidade digital como direito, não como diferencial.</p></div>
+        <div class="cat-card"><h3>WCAG (W3C)</h3><p style="font-size:14px; color:var(--ink-soft);">Web Content Accessibility Guidelines — diretriz técnica internacional usada como referência para navegação por teclado, contraste e compatibilidade com leitores de tela.</p></div>
+        <div class="cat-card"><h3>UNESCO</h3><p style="font-size:14px; color:var(--ink-soft);">"Guia para Garantir a Inclusão e a Equidade na Educação" (UNESCO, 2017) — referência para a distinção entre igualdade e equidade usada nesta página.</p></div>
+        <div class="cat-card"><h3>ODS-4 / ONU</h3><p style="font-size:14px; color:var(--ink-soft);">Objetivo de Desenvolvimento Sustentável nº 4 da Agenda 2030 — educação inclusiva, equitativa e de qualidade para todos.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <span class="fb"><svg class="spark" viewBox="0 0 24 24"><use href="#brand-icon" xlink:href="#brand-icon"></use></svg>AcessaMais</span>
+    <span class="fm">Feira Tecnológica 2026 — ETEC Guariba · Programação para Internet</span>
+  </div>
+</footer>
+<!-- TOASTS -->
+<div class="toast-wrap" id="toastWrap" role="status" aria-live="polite"></div>
+
+<!-- VOLTAR AO TOPO -->
+<button class="totop" id="toTop" aria-label="Voltar ao topo">↑</button>
+
+<!-- BARRA DE ACESSIBILIDADE -->
+<div class="a11y-bar">
+  <button class="a11y-fab" id="a11yFab" aria-label="Abrir painel de acessibilidade" aria-expanded="false"><svg class="fab-icon" viewBox="0 0 100 100" aria-hidden="true"><use href="#inclusion-icon" xlink:href="#inclusion-icon"></use></svg></button>
+  <div class="a11y-panel" id="a11yPanel" role="dialog" aria-label="Painel de acessibilidade">
+    <button class="a11y-close" id="a11yClose" aria-label="Fechar painel">✕</button>
+    <h2>Acessibilidade</h2>
+    <p class="sub">Ajustes reais, aplicados agora nesta página.</p>
+
+    <button class="a11y-listen" id="a11yListen">🔊 Ouvir esta página (IA de leitura)</button>
+
+    <div class="a11y-group">
+      <span class="lbl">Tamanho do texto</span>
+      <div class="a11y-row">
+        <button id="fontDec" aria-label="Diminuir fonte">A−</button>
+        <button id="fontReset" aria-label="Fonte padrão">A</button>
+        <button id="fontInc" aria-label="Aumentar fonte">A+</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Contraste</span>
+      <div class="a11y-row">
+        <button data-toggle="high-contrast">Alto contraste</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Epilepsia / fotossensibilidade</span>
+      <div class="a11y-row">
+        <button id="epilepsyToggle" class="epilepsy-btn">Modo seguro (muda tudo)</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Paletas para os 7 tipos de daltonismo</span>
+      <div class="a11y-row" id="cbRow">
+        <button data-cb="none" class="active">Padrão</button>
+        <button data-cb="cb-protanopia">Protanopia</button>
+        <button data-cb="cb-protanomalia">Protanomalia</button>
+        <button data-cb="cb-deuteranopia">Deuteranopia</button>
+        <button data-cb="cb-deuteranomalia">Deuteranomalia</button>
+        <button data-cb="cb-tritanopia">Tritanopia</button>
+        <button data-cb="cb-tritanomalia">Tritanomalia</button>
+        <button data-cb="cb-acromatopsia">Acromatopsia</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Navegação e foco</span>
+      <div class="a11y-row">
+        <button data-toggle="link-highlight">Destacar links</button>
+        <button data-toggle="big-click">Cliques maiores</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Leitura</span>
+      <div class="a11y-row">
+        <button data-toggle="dyslexia-mode">Fonte p/ dislexia</button>
+        <button data-toggle="reduce-motion">Reduzir movimento</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Acessibilidade Motora</span>
+      <div class="a11y-row">
+        <button data-motor="targets" aria-pressed="false">Toque ampliado</button>
+        <button data-motor="spacing" aria-pressed="false">Espaçamento</button>
+      </div>
+      <div class="a11y-row">
+        <button data-motor="gestures" aria-pressed="false">Sem gestos</button>
+        <button data-motor="confirm" aria-pressed="false">Confirmar ações</button>
+      </div>
+      <div class="a11y-row">
+        <button data-motor="cursor" aria-pressed="false">Cursor grande</button>
+        <button data-motor="focus" aria-pressed="false">Foco grande</button>
+      </div>
+      <div class="a11y-row">
+        <button data-motor="time" aria-pressed="false">Tempo estendido</button>
+      </div>
+      <button class="motor-all-btn" id="motorAllBtn" type="button">Ativar todas as opções recomendadas</button>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Libras (Língua Brasileira de Sinais)</span>
+      <button class="a11y-libras-btn" id="librasOpenBtn" aria-haspopup="dialog" aria-controls="librasPanel">
+        <svg class="lt-icon" viewBox="0 0 100 100" aria-hidden="true"><use href="#inclusion-icon" xlink:href="#inclusion-icon"></use></svg>
+        <span>Ativar Libras<small>Abre o intérprete em uma janela à parte</small></span>
+      </button>
+    </div>
+
+    <button class="a11y-reset" id="a11yReset">Restaurar tudo</button>
+  </div>
+</div>
+
+<!-- BARRA DO NARRADOR -->
+<div class="narrator-bar" id="narratorBar">
+  <div class="nb-progress" id="nbProgress"></div>
+  <button id="nbPlayPause" aria-label="Pausar leitura">⏸</button>
+  <div class="nb-info">
+    <div class="nb-label">Ouvindo esta página</div>
+    <div class="nb-text" id="nbText">Início</div>
+  </div>
+  <button id="nbStop" aria-label="Parar leitura">✕</button>
+</div>
+<script src="motor.js"></script>
+<script src="script.js"></script>
+
+<!-- PAINEL DE LIBRAS -->
+<div class="libras-panel size-md pos-br" id="librasPanel" role="dialog" aria-label="Intérprete de Libras" aria-hidden="true">
+  <div class="lp-header">
+    <svg class="lt-icon" viewBox="0 0 100 100" aria-hidden="true"><use href="#inclusion-icon" xlink:href="#inclusion-icon"></use></svg>
+    <div class="lp-title"><strong id="lpTitle">Libras</strong><span>AcessaMais &middot; intérprete</span></div>
+    <button id="lpMinimize" aria-label="Minimizar painel de Libras">&#8211;</button>
+    <button id="lpClose" aria-label="Fechar painel de Libras">&#10005;</button>
+  </div>
+  <div class="lp-body">
+    <div class="lp-stage" id="lpStage">
+      <div class="lp-placeholder"><svg class="lt-icon" viewBox="0 0 100 100" aria-hidden="true"><use href="#inclusion-icon" xlink:href="#inclusion-icon"></use></svg><p>Selecione um trecho com "Ver em Libras" para carregar o conteúdo.</p></div>
+    </div>
+    <div class="lp-controls">
+      <button id="lpPlay" aria-label="Reproduzir">&#9654;</button>
+      <button id="lpRestart" aria-label="Reiniciar">&#8635;</button>
+      <div class="lp-progress" id="lpProgress"><div class="lp-progress-fill" id="lpProgressFill"></div></div>
+      <button class="lp-speed" id="lpSpeedBtn">1x</button>
+      <button id="lpFullscreen" aria-label="Tela cheia">&#9974;</button>
+    </div>
+    <p class="lp-caption" id="lpCaption"></p>
+
+    <button class="lp-settings-toggle" id="lpSettingsToggle" aria-expanded="false" aria-controls="lpSettings">Configurações do intérprete</button>
+    <div class="lp-settings" id="lpSettings">
+      <span class="lbl">Tamanho</span>
+      <div class="lp-set-row">
+        <button data-libras-size="sm">Pequeno</button>
+        <button data-libras-size="md" class="active">Médio</button>
+        <button data-libras-size="lg">Grande</button>
+      </div>
+      <span class="lbl">Posição</span>
+      <div class="lp-set-row">
+        <button data-libras-pos="br" class="active">Inf. direito</button>
+        <button data-libras-pos="bl">Inf. esquerdo</button>
+        <button data-libras-pos="tr">Sup. direito</button>
+      </div>
+      <span class="lbl">Reprodução</span>
+      <div class="lp-set-row">
+        <button data-libras-play="manual" class="active">Manual</button>
+        <button data-libras-play="auto">Automática</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- VLIBRAS — widget oficial do Governo Federal (vlibras.gov.br), gratuito e sem
+     necessidade de conta/token — tradução automática de português para Libras -->
+<div vw class="enabled vlibras-dock">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  if (window.VLibras) { new window.VLibras.Widget('https://vlibras.gov.br/app'); }
+</script>
+
+<script src="libras-data.js"></script>
+<script src="libras.js"></script>
+</body>
+</html>
